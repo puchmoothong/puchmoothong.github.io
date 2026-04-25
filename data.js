@@ -26,7 +26,7 @@ var SITE_DATA = {
     phone: "086-178-3606",
     location: "นครปฐม",
     address: "ย่านนครปฐม (ใกล้โรงเรียน)",
-    openHours: "เปิดทุกวัน 07:00 - 17:00",
+    openHours: "เปิดทุกวัน 05:00 - 15:30",
 
     // ===== ข้อมูลเกี่ยวกับร้าน =====
     aboutTitle: "ร้านอาหารครอบครัว ที่ทำด้วยใจ ตั้งแต่ปี 2538",
@@ -55,14 +55,6 @@ var SITE_DATA = {
             category: "noodle",
             emoji: "🍜",
             popular: true
-        },
-        {
-            name: "ก๋วยเตี๋ยวหมูตุ๋น",
-            desc: "หมูตุ๋นเปื่อยนุ่ม น้ำซุปหอมเครื่องเทศ",
-            price: "40-50 บาท",
-            category: "noodle",
-            emoji: "🍜",
-            popular: false
         },
         {
             name: "ก๋วยเตี๋ยวลูกชิ้น",
@@ -174,13 +166,5 @@ var SITE_DATA = {
             emoji: "🥤",
             popular: false
         },
-        {
-            name: "ชา/กาแฟเย็น",
-            desc: "ชาเย็น กาแฟเย็น โอวัลติน",
-            price: "20-25 บาท",
-            category: "drink",
-            emoji: "☕",
-            popular: false
-        }
     ]
 };
