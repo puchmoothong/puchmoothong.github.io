@@ -25,7 +25,7 @@ var SITE_DATA = {
     since: "Since 1995",
     phone: "086-178-3606",
     location: "นครปฐม",
-    address: "ย่านนครปฐม (ใกล้โรงเรียน)",
+    address: "หิวข้าวก็คลิก",
     mapUrl: "https://maps.app.goo.gl/En4YhSfG5r57momL8",
     openHours: "เปิดทุกวัน 06:00 - 15:30",
 
@@ -398,7 +398,7 @@ var SITE_DATA = {
         },
         {
             name: "น้ำพั้นซ์",
-            desc: "น้ำพั้นซ์หวานเย็น",
+            desc: "น้ำพั้นซ์หวานเย็น ที่ร้านทำเอง",
             price: "15-25 บาท",
             category: "drink",
             emoji: "🍹",
