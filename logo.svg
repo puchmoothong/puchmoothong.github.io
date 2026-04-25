@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5D4037;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3E2723;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5D060"/>
+      <stop offset="50%" style="stop-color:#D4A843"/>
+      <stop offset="100%" style="stop-color:#B8912E"/>
+    </linearGradient>
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C0392B"/>
+      <stop offset="100%" style="stop-color:#96281B"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="shadowSmall" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="540" cy="540" r="510" fill="url(#bgGrad)" filter="url(#shadow)"/>
+
+  <!-- Gold Ring Outer -->
+  <circle cx="540" cy="540" r="490" fill="none" stroke="url(#goldGrad)" stroke-width="12"/>
+
+  <!-- Gold Ring Inner -->
+  <circle cx="540" cy="540" r="465" fill="none" stroke="url(#goldGrad)" stroke-width="3"/>
+
+  <!-- Decorative dots on ring -->
+  <g fill="#D4A843" opacity="0.6">
+    <circle cx="540" cy="60" r="6"/>
+    <circle cx="540" cy="1020" r="6"/>
+    <circle cx="60" cy="540" r="6"/>
+    <circle cx="1020" cy="540" r="6"/>
+    <circle cx="200" cy="200" r="5"/>
+    <circle cx="880" cy="200" r="5"/>
+    <circle cx="200" cy="880" r="5"/>
+    <circle cx="880" cy="880" r="5"/>
+  </g>
+
+  <!-- Cartoon Mom Character -->
+  <g transform="translate(540, 340)" filter="url(#shadowSmall)">
+    <!-- Body / Apron -->
+    <ellipse cx="0" cy="95" rx="75" ry="55" fill="#1565C0"/>
+    <!-- Apron -->
+    <path d="M-50,70 Q0,130 50,70" fill="#FFF8E1" stroke="#D4A843" stroke-width="2"/>
+    <text x="0" y="105" text-anchor="middle" font-family="Arial" font-size="16" fill="#5D4037" font-weight="bold">เจ๊พัช</text>
+
+    <!-- Neck -->
+    <rect x="-12" y="25" width="24" height="20" rx="5" fill="#FFCC80"/>
+
+    <!-- Head -->
+    <ellipse cx="0" cy="0" rx="62" ry="68" fill="#FFCC80"/>
+
+    <!-- Hair -->
+    <path d="M-62,-10 Q-65,-50 -40,-68 Q-20,-82 0,-85 Q20,-82 40,-68 Q65,-50 62,-10 Q60,-30 40,-50 Q20,-62 0,-65 Q-20,-62 -40,-50 Q-60,-30 -62,-10" fill="#1A1A1A"/>
+    <!-- Hair bun -->
+    <ellipse cx="0" cy="-80" rx="25" ry="20" fill="#1A1A1A"/>
+
+    <!-- Eyes -->
+    <g>
+      <!-- Left eye -->
+      <ellipse cx="-22" cy="-8" rx="10" ry="11" fill="white"/>
+      <circle cx="-20" cy="-6" r="6" fill="#1A1A1A"/>
+      <circle cx="-18" cy="-8" r="2" fill="white"/>
+      <!-- Right eye -->
+      <ellipse cx="22" cy="-8" rx="10" ry="11" fill="white"/>
+      <circle cx="24" cy="-6" r="6" fill="#1A1A1A"/>
+      <circle cx="26" cy="-8" r="2" fill="white"/>
+    </g>
+
+    <!-- Eyebrows -->
+    <path d="M-35,-22 Q-22,-30 -12,-22" fill="none" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M12,-22 Q22,-30 35,-22" fill="none" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Nose -->
+    <path d="M-3,5 Q0,12 3,5" fill="none" stroke="#E0A060" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Smile -->
+    <path d="M-25,20 Q0,42 25,20" fill="none" stroke="#C0392B" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Cheek dimples -->
+    <circle cx="-35" cy="18" r="10" fill="#FF8A80" opacity="0.35"/>
+    <circle cx="35" cy="18" r="10" fill="#FF8A80" opacity="0.35"/>
+
+    <!-- Arms holding bowl -->
+    <!-- Left arm -->
+    <path d="M-65,85 Q-95,110 -75,140 Q-60,155 -35,145" fill="none" stroke="#FFCC80" stroke-width="18" stroke-linecap="round"/>
+    <!-- Right arm -->
+    <path d="M65,85 Q95,110 75,140 Q60,155 35,145" fill="none" stroke="#FFCC80" stroke-width="18" stroke-linecap="round"/>
+
+    <!-- Bowl -->
+    <ellipse cx="0" cy="155" rx="55" ry="18" fill="#FFF8E1" stroke="#D4A843" stroke-width="2"/>
+    <path d="M-55,148 Q-55,185 0,190 Q55,185 55,148" fill="#FFF8E1" stroke="#D4A843" stroke-width="2"/>
+
+    <!-- Noodles in bowl -->
+    <path d="M-20,145 Q-10,130 0,145 Q10,130 20,145" fill="none" stroke="#F5D060" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-15,140 Q-5,125 5,140 Q15,125 25,140" fill="none" stroke="#FFB74D" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Steam -->
+    <path d="M-15,125 Q-18,110 -12,100" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+    <path d="M5,120 Q2,105 8,95" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+    <path d="M20,125 Q23,108 17,98" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  </g>
+
+  <!-- Restaurant Name - Main -->
+  <text x="540" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="url(#goldGrad)" letter-spacing="4">
+    เจ๊พัช
+  </text>
+
+  <!-- Restaurant Name - Sub -->
+  <text x="540" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#F5D060" letter-spacing="6">
+    ก๋วยเตี๋ยวหมูทอง
+  </text>
+
+  <!-- Decorative line -->
+  <line x1="250" y1="720" x2="830" y2="720" stroke="url(#goldGrad)" stroke-width="2"/>
+  <circle cx="540" cy="720" r="6" fill="#D4A843"/>
+  <circle cx="250" cy="720" r="4" fill="#D4A843"/>
+  <circle cx="830" cy="720" r="4" fill="#D4A843"/>
+
+  <!-- Tagline -->
+  <text x="540" y="770" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#FFF8E1" letter-spacing="3" opacity="0.9">
+    อร่อยทุกจาน ราคาเป็นมิตร
+  </text>
+
+  <!-- Bottom Ribbon for Phone -->
+  <path d="M240,830 L840,830 L820,870 L260,870 Z" fill="url(#ribbonGrad)" filter="url(#shadowSmall)"/>
+  <path d="M240,830 L220,850 L240,870 L260,870 Z" fill="#7B1A10"/>
+  <path d="M840,830 L860,850 L840,870 L820,870 Z" fill="#7B1A10"/>
+
+  <text x="540" y="860" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="white" letter-spacing="4">
+    ☎ 086-178-3606
+  </text>
+
+  <!-- Since 1995 Badge -->
+  <g transform="translate(540, 950)">
+    <rect x="-120" y="-25" width="240" height="50" rx="25" fill="none" stroke="url(#goldGrad)" stroke-width="2.5"/>
+    <text x="0" y="8" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#D4A843" font-weight="bold" letter-spacing="6">
+      SINCE 1995
+    </text>
+  </g>
+
+  <!-- Location -->
+  <text x="540" y="1010" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#FFF8E1" opacity="0.7" letter-spacing="2">
+    📍 นครปฐม
+  </text>
+</svg>
