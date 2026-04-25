@@ -216,6 +216,94 @@ var SITE_DATA = {
             popular: false
         },
         {
+            name: "มักกะโรนี",
+            desc: "หมู/ไก่ (หมูกรอบ กุ้ง หมึก 60-70)",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍝",
+            popular: false
+        },
+        {
+            name: "สปาเกตตี",
+            desc: "หมู/ไก่ (หมูกรอบ กุ้ง หมึก 60-70)",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍝",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดอเมริกัน",
+            desc: "ข้าวผัดซอสมะเขือเทศ ไข่ดาว ไส้กรอก",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "หมูกรอบคั่วพริกเกลือ",
+            desc: "หมูกรอบทอดคั่วกับพริกเกลือหอมๆ",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดแฮม / แหนม",
+            desc: "ข้าวผัดแฮมหรือแหนม",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดต้มยำ",
+            desc: "ข้าวผัดรสต้มยำ แซ่บ",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "หมึกผัดไข่เค็ม",
+            desc: "หมึกผัดไข่เค็มเข้มข้น",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ผัดผงกะหรี่",
+            desc: "หมู/ไก่ (หมูกรอบ กุ้ง หมึก 60-70)",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "กะเพราไข่เยี่ยวม้า",
+            desc: "ผัดกะเพราไข่เยี่ยวม้า รสจัด",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "มาม่าผัดกะเพรา",
+            desc: "มาม่าผัดกะเพราหอมๆ",
+            price: "40-50 บาท",
+            category: "made-to-order",
+            emoji: "🍜",
+            popular: false
+        },
+        {
+            name: "ผัดหมี่ฮ่องกง",
+            desc: "เส้นหมี่ฮ่องกงผัดกรอบ",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍜",
+            popular: false
+        },
+        {
             name: "ราดหน้า หมู/ไก่",
             desc: "เส้นใหญ่ราดหน้า น้ำข้นเข้มข้น",
             price: "40-50 บาท",
