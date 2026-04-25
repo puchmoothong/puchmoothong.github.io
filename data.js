@@ -51,16 +51,32 @@ var SITE_DATA = {
         // ────── ก๋วยเตี๋ยว ──────
         {
             name: "ก๋วยเตี๋ยวหมูทอง",
-            desc: "เมนูเด็ดประจำร้าน หมูทอดกรอบนอกนุ่มใน น้ำซุปเข้มข้น",
-            price: "40-50 บาท",
+            desc: "เมนูเด็ดประจำร้าน หมูทอดกรอบนอกนุ่มใน น้ำซุปเข้มข้น (เลือกเส้นได้: เล็ก ใหญ่ บะหมี่ เส้นหมี่ ขนมจีน)",
+            price: "50 บาท",
             category: "noodle",
             emoji: "🍜",
             popular: true
         },
         {
+            name: "ก๋วยเตี๋ยวเกี๊ยวหมู",
+            desc: "เกี๊ยวหมูห่อมือ น้ำซุปเข้มข้น",
+            price: "50 บาท",
+            category: "noodle",
+            emoji: "🥟",
+            popular: false
+        },
+        {
+            name: "ก๋วยเตี๋ยวเกี๊ยวกุ้ง",
+            desc: "เกี๊ยวกุ้งพริกไทย",
+            price: "40 บาท",
+            category: "noodle",
+            emoji: "🥟",
+            popular: false
+        },
+        {
             name: "ก๋วยเตี๋ยวลูกชิ้นหมู",
             desc: "ลูกชิ้นหมูเด้งกรุบ",
-            price: "40-50 บาท",
+            price: "50 บาท",
             category: "noodle",
             emoji: "🍜",
             popular: false
@@ -68,7 +84,7 @@ var SITE_DATA = {
         {
             name: "บะหมี่แห้ง/น้ำ",
             desc: "บะหมี่เส้นเหนียวนุ่ม หมูแดง หมูกรอบ",
-            price: "40-50 บาท",
+            price: "50 บาท",
             category: "noodle",
             emoji: "🍜",
             popular: false
@@ -78,7 +94,7 @@ var SITE_DATA = {
         {
             name: "ข้าวหมูแดง",
             desc: "หมูแดงหวานกลมกล่อม ราดน้ำเกรวี่",
-            price: "40-50 บาท",
+            price: "50 บาท",
             category: "rice",
             emoji: "🍚",
             popular: true
@@ -86,7 +102,7 @@ var SITE_DATA = {
         {
             name: "ข้าวหมูกรอบ",
             desc: "หมูกรอบทอดจนกรอบเหลือง ราดน้ำเกรวี่",
-            price: "40-50 บาท",
+            price: "50 บาท",
             category: "rice",
             emoji: "🍚",
             popular: true
@@ -153,6 +169,54 @@ var SITE_DATA = {
         {
             name: "ผัดซีอิ๊ว",
             desc: "เส้นใหญ่ผัดซีอิ๊ว ไก่/หมู (หมึก กุ้ง หมูกรอบ 60-70)",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดพริกแกง",
+            desc: "หมู/ไก่ 50-60 (หมูกรอบ กุ้ง หมึก 60-70)",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดพริกเผา",
+            desc: "หมู/ไก่ 50-60 (หมูกรอบ กุ้ง หมึก 60-70)",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดพริกสด",
+            desc: "หมู/ไก่ 50-60 (หมูกรอบ กุ้ง หมึก 60-70)",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดคะน้า",
+            desc: "หมู/ไก่ 50-60 (หมูกรอบ กุ้ง หมึก 60-70)",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดผักบุ้ง",
+            desc: "หมู/ไก่ 50-60 (หมูกรอบ กุ้ง หมึก 60-70)",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดผักรวม",
+            desc: "หมู/ไก่ 50-60 (หมูกรอบ กุ้ง หมึก 60-70)",
             price: "50-60 บาท",
             category: "made-to-order",
             emoji: "🍳",
