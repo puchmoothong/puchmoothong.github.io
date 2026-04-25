@@ -51,8 +51,8 @@ var SITE_DATA = {
         // ────── ก๋วยเตี๋ยว ──────
         {
             name: "ก๋วยเตี๋ยวหมูทอง",
-            desc: "เมนูเด็ดประจำร้าน หมูทอดกรอบนอกนุ่มใน น้ำซุปเข้มข้น (เลือกเส้นได้: เล็ก ใหญ่ บะหมี่ เส้นหมี่ ขนมจีน)",
-            price: "50 บาท",
+            desc: "เมนูเด็ดประจำร้าน เลือกเนื้อสัตว์ได้ตามใจ หมู ไก่ หมึก กุ้ง หมูกรอบ ลูกชิ้น น้ำซุปข้น-ใส",
+            price: "40-50 บาท",
             category: "noodle",
             emoji: "🍜",
             popular: true
@@ -60,23 +60,16 @@ var SITE_DATA = {
         {
             name: "ก๋วยเตี๋ยวเกี๊ยวหมู",
             desc: "เกี๊ยวหมูห่อมือ น้ำซุปเข้มข้น",
-            price: "50 บาท",
+            price: "40-50 บาท",
             category: "noodle",
             emoji: "🥟",
             popular: false
         },
+        
         {
-            name: "ก๋วยเตี๋ยวเกี๊ยวกุ้ง",
-            desc: "เกี๊ยวกุ้งพริกไทย",
-            price: "40 บาท",
-            category: "noodle",
-            emoji: "🥟",
-            popular: false
-        },
-        {
-            name: "ก๋วยเตี๋ยวลูกชิ้นหมู",
-            desc: "ลูกชิ้นหมูเด้งกรุบ",
-            price: "50 บาท",
+            name: "ก๋วยเตี๋ยวลูกชิ้นหมู-เครื่องใน",
+            desc: "ลูกชิ้นหมูหมักนุ่ม ลูกชิ้นเด้ง เครื่องในหมูสดอร่อย",
+            price: "40-50 บาท",
             category: "noodle",
             emoji: "🍜",
             popular: false
@@ -84,7 +77,7 @@ var SITE_DATA = {
         {
             name: "บะหมี่แห้ง/น้ำ",
             desc: "บะหมี่เส้นเหนียวนุ่ม หมูแดง หมูกรอบ",
-            price: "50 บาท",
+            price: "40-50 บาท",
             category: "noodle",
             emoji: "🍜",
             popular: false
@@ -94,7 +87,7 @@ var SITE_DATA = {
         {
             name: "ข้าวหมูแดง",
             desc: "หมูแดงหวานกลมกล่อม ราดน้ำเกรวี่",
-            price: "50 บาท",
+            price: "40-50 บาท",
             category: "rice",
             emoji: "🍚",
             popular: true
@@ -102,7 +95,7 @@ var SITE_DATA = {
         {
             name: "ข้าวหมูกรอบ",
             desc: "หมูกรอบทอดจนกรอบเหลือง ราดน้ำเกรวี่",
-            price: "50 บาท",
+            price: "40-50 บาท",
             category: "rice",
             emoji: "🍚",
             popular: true
@@ -225,7 +218,7 @@ var SITE_DATA = {
         {
             name: "ราดหน้า หมู/ไก่",
             desc: "เส้นใหญ่ราดหน้า น้ำข้นเข้มข้น",
-            price: "40 บาท",
+            price: "40-50 บาท",
             category: "made-to-order",
             emoji: "🍳",
             popular: false
@@ -233,10 +226,18 @@ var SITE_DATA = {
         {
             name: "ราดหน้าทะเล",
             desc: "เส้นใหญ่ราดหน้า กุ้ง หมึก",
-            price: "50 บาท",
+            price: "50-60 บาท",
             category: "made-to-order",
             emoji: "🍳",
             popular: false
+        },
+         {
+            name: "สุกี้น้ำ / แห้ง",
+            desc: "หมู ไก่ หมูกรอบ กุ้ง หมึก น้ำจิ้มเด็ดมาก",
+            price: "50-60 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: true
         },
 
         // ────── กับข้าว ──────
@@ -293,15 +294,15 @@ var SITE_DATA = {
         {
             name: "น้ำอัดลม",
             desc: "โค้ก เป๊ปซี่ แฟนต้า สไปรท์",
-            price: "แก้ว 15 / โอ่ง 25 บาท",
+            price: " 15 บาท / แก้วโอ่ง 25 บาท",
             category: "drink",
             emoji: "🥤",
             popular: false
         },
         {
             name: "น้ำเก๊กฮวย / โอเลี้ยง",
-            desc: "เย็นชื่นใจ",
-            price: "แก้ว 10 / โอ่ง 20 บาท",
+            desc: "ที่ร้านทำเอง เย็นชื่นใจ",
+            price: "10-20 บาท",
             category: "drink",
             emoji: "🧊",
             popular: false
@@ -309,7 +310,7 @@ var SITE_DATA = {
         {
             name: "น้ำพั้นซ์",
             desc: "น้ำพั้นซ์หวานเย็น",
-            price: "แก้ว 15 / โอ่ง 25 บาท",
+            price: "15-25 บาท",
             category: "drink",
             emoji: "🍹",
             popular: false
