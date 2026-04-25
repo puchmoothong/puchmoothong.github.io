@@ -18,8 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Hero
     setText('hero-name', D.restaurantName);
     setText('hero-tagline', 'ก๋วยเตี๋ยว ข้าวหมูแดง หมูกรอบ ข้าวมันไก่ อาหารตามสั่ง');
+    setText('hero-lunchbox', 'รับทำข้าวกล่อง ราคาเป็นกันเอง');
     setText('hero-since', D.since);
-    setText('hero-location', '📍 ' + D.location);
+    if (D.mapUrl) {
+        setHtml('hero-location', '<a href="' + D.mapUrl + '" target="_blank" style="color:inherit;text-decoration:underline">📍 ' + D.location + ' (ดูแผนที่)</a>');
+    } else {
+        setText('hero-location', '📍 ' + D.location);
+    }
     var phoneBtn = document.getElementById('hero-phone');
     if (phoneBtn) {
         phoneBtn.textContent = '📞 โทรสั่ง ' + D.phone;
@@ -45,7 +50,11 @@ document.addEventListener('DOMContentLoaded', function() {
     setText('order-foodpanda', searchText);
 
     // Contact
-    setText('contact-address', D.address);
+    if (D.mapUrl) {
+        setHtml('contact-address', '<a href="' + D.mapUrl + '" target="_blank">' + D.address + ' (ดูแผนที่)</a>');
+    } else {
+        setText('contact-address', D.address);
+    }
     setText('contact-hours', D.openHours);
     var contactPhone = document.getElementById('contact-phone');
     if (contactPhone) {

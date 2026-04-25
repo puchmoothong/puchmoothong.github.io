@@ -176,6 +176,18 @@ a {
     box-shadow: 0 4px 30px rgba(0,0,0,0.3);
 }
 
+.hero-lunchbox {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--gold);
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+    padding: 6px 20px;
+    border: 1px solid var(--gold);
+    border-radius: 50px;
+    display: inline-block;
+}
+
 .hero-since {
     font-size: 1.1rem;
     font-weight: 500;

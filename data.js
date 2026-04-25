@@ -26,7 +26,8 @@ var SITE_DATA = {
     phone: "086-178-3606",
     location: "นครปฐม",
     address: "ย่านนครปฐม (ใกล้โรงเรียน)",
-    openHours: "เปิดทุกวัน 05:00 - 15:30",
+    mapUrl: "https://maps.app.goo.gl/En4YhSfG5r57momL8",
+    openHours: "เปิดทุกวัน 06:00 - 15:30",
 
     // ===== ข้อมูลเกี่ยวกับร้าน =====
     aboutTitle: "ร้านอาหารครอบครัว ที่ทำด้วยใจ ตั้งแต่ปี 2538",
