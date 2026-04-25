@@ -42,9 +42,10 @@ var SITE_DATA = {
     deliverySearch: "kuai teaw moo thong",
 
     // ===== เมนูอาหาร =====
+    // หมายเหตุ: พิเศษ +10 บาท ทุกเมนู
     // วิธีเพิ่มเมนู: copy บรรทัดข้างล่างแล้วแก้ชื่อ/ราคา
     // category: "noodle" = ก๋วยเตี๋ยว, "rice" = ข้าวราดแกง,
-    //           "made-to-order" = ตามสั่ง, "drink" = เครื่องดื่ม
+    //           "made-to-order" = ตามสั่ง, "side" = กับข้าว, "drink" = เครื่องดื่ม
     // popular: true = ติดป้าย "ยอดนิยม", false = ไม่ติด
     menu: [
         // ────── ก๋วยเตี๋ยว ──────
@@ -57,8 +58,8 @@ var SITE_DATA = {
             popular: true
         },
         {
-            name: "ก๋วยเตี๋ยวลูกชิ้น",
-            desc: "ลูกชิ้นหมู/เนื้อ เด้งกรุบ",
+            name: "ก๋วยเตี๋ยวลูกชิ้นหมู",
+            desc: "ลูกชิ้นหมูเด้งกรุบ",
             price: "40-50 บาท",
             category: "noodle",
             emoji: "🍜",
@@ -101,7 +102,7 @@ var SITE_DATA = {
         {
             name: "ข้าวมันไก่ต้ม",
             desc: "ข้าวมันหอม ไก่ต้มนุ่ม น้ำจิ้มสูตรเด็ด",
-            price: "40-50 บาท",
+            price: "50-60 บาท",
             category: "rice",
             emoji: "🍗",
             popular: false
@@ -109,43 +110,86 @@ var SITE_DATA = {
         {
             name: "ข้าวมันไก่ทอด",
             desc: "ไก่ทอดกรอบเสิร์ฟกับข้าวมันหอม",
-            price: "40-50 บาท",
+            price: "50-60 บาท",
             category: "rice",
             emoji: "🍗",
             popular: false
         },
 
         // ────── อาหารตามสั่ง ──────
+        // ไก่ หมู 50-60 / หมึก กุ้ง หมูกรอบ 60-70
         {
-            name: "ผัดกะเพราหมู/ไก่",
-            desc: "ผัดกะเพราหอมๆ ไข่ดาว",
-            price: "40-50 บาท",
+            name: "ผัดกะเพรา ไก่/หมู",
+            desc: "ผัดกะเพราหอมๆ ไข่ดาว (หมึก กุ้ง หมูกรอบ 60-70)",
+            price: "50-60 บาท",
             category: "made-to-order",
             emoji: "🍳",
-            popular: false
+            popular: true
         },
         {
             name: "ข้าวผัด",
-            desc: "ข้าวผัดหมู/ไก่/กุ้ง",
-            price: "40-50 บาท",
+            desc: "ข้าวผัดไก่/หมู (หมึก กุ้ง หมูกรอบ 60-70)",
+            price: "50-60 บาท",
             category: "made-to-order",
             emoji: "🍳",
             popular: false
         },
         {
-            name: "ราดหน้า/ผัดซีอิ๊ว",
-            desc: "เส้นใหญ่ราดหน้า หรือผัดซีอิ๊ว",
-            price: "40-50 บาท",
+            name: "ผัดซีอิ๊ว",
+            desc: "เส้นใหญ่ผัดซีอิ๊ว ไก่/หมู (หมึก กุ้ง หมูกรอบ 60-70)",
+            price: "50-60 บาท",
             category: "made-to-order",
             emoji: "🍳",
             popular: false
         },
         {
-            name: "ผัดไทย",
-            desc: "ผัดไทยกุ้งสด/หมู",
-            price: "40-50 บาท",
+            name: "ราดหน้า หมู/ไก่",
+            desc: "เส้นใหญ่ราดหน้า น้ำข้นเข้มข้น",
+            price: "40 บาท",
             category: "made-to-order",
             emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ราดหน้าทะเล",
+            desc: "เส้นใหญ่ราดหน้า กุ้ง หมึก",
+            price: "50 บาท",
+            category: "made-to-order",
+            emoji: "🍳",
+            popular: false
+        },
+
+        // ────── กับข้าว ──────
+        {
+            name: "แกงป่า",
+            desc: "แกงป่าหมู/ไก่ รสจัดจ้าน",
+            price: "80-100 บาท",
+            category: "side",
+            emoji: "🥘",
+            popular: false
+        },
+        {
+            name: "แกงจืด",
+            desc: "แกงจืดผักรวม หมูสับ",
+            price: "80-100 บาท",
+            category: "side",
+            emoji: "🥘",
+            popular: false
+        },
+        {
+            name: "ยำ",
+            desc: "ยำรวมมิตร/ยำวุ้นเส้น",
+            price: "80-100 บาท",
+            category: "side",
+            emoji: "🥗",
+            popular: false
+        },
+        {
+            name: "ต้มยำ",
+            desc: "ต้มยำหมู/ไก่/กุ้ง รสแซ่บ",
+            price: "80-100 บาท",
+            category: "side",
+            emoji: "🥘",
             popular: false
         },
 
@@ -161,10 +205,26 @@ var SITE_DATA = {
         {
             name: "น้ำอัดลม",
             desc: "โค้ก เป๊ปซี่ แฟนต้า สไปรท์",
-            price: "15-20 บาท",
+            price: "แก้ว 15 / โอ่ง 25 บาท",
             category: "drink",
             emoji: "🥤",
             popular: false
         },
+        {
+            name: "น้ำเก๊กฮวย / โอเลี้ยง",
+            desc: "เย็นชื่นใจ",
+            price: "แก้ว 10 / โอ่ง 20 บาท",
+            category: "drink",
+            emoji: "🧊",
+            popular: false
+        },
+        {
+            name: "น้ำพั้นซ์",
+            desc: "น้ำพั้นซ์หวานเย็น",
+            price: "แก้ว 15 / โอ่ง 25 บาท",
+            category: "drink",
+            emoji: "🍹",
+            popular: false
+        }
     ]
 };
