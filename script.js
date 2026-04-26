@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var html = '';
         for (var i = 0; i < D.menu.length; i++) {
             var item = D.menu[i];
-            html += '<div class="menu-card" data-category="' + item.category + '">'
+            html += '<div class="menu-card" data-category="' + item.category + '" data-popular="' + item.popular + '">'
                 + '<div class="menu-card-img">' + item.emoji + '</div>'
                 + '<div class="menu-card-info">'
                 + '<h3>' + item.name + '</h3>'
@@ -120,7 +120,15 @@ document.addEventListener('DOMContentLoaded', function() {
             var filters = filter.split(',');
             var cards = document.querySelectorAll('.menu-card');
             cards.forEach(function(card) {
-                if (filter === 'all' || filters.indexOf(card.getAttribute('data-category')) !== -1) {
+                var show = false;
+                if (filter === 'all') {
+                    show = true;
+                } else if (filter === 'popular') {
+                    show = card.getAttribute('data-popular') === 'true';
+                } else {
+                    show = filters.indexOf(card.getAttribute('data-category')) !== -1;
+                }
+                if (show) {
                     card.style.display = 'flex';
                     card.style.opacity = '0';
                     card.style.transform = 'translateY(10px)';

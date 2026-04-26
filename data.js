@@ -93,7 +93,7 @@ var SITE_DATA = {
             price: "50-60 บาท",
             category: "order-noodle",
             emoji: "🍲",
-            popular: false
+            popular: true
         },
         {
             name: "ผัดซีอิ๊ว",
@@ -323,23 +323,6 @@ var SITE_DATA = {
             emoji: "🍳",
             popular: false
         },
-        {
-            name: "ราดหน้าทะเล",
-            desc: "เส้นใหญ่ราดหน้า กุ้ง หมึก",
-            price: "50-60 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: false
-        },
-         {
-            name: "สุกี้น้ำ / แห้ง",
-            desc: "หมู ไก่ หมูกรอบ กุ้ง หมึก น้ำจิ้มเด็ดมาก",
-            price: "50-60 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: true
-        },
-
         // ────── กับข้าว ──────
         {
             name: "หมูกรอบ / ไก่ต้ม / ไก่ทอด",
@@ -379,6 +362,14 @@ var SITE_DATA = {
             price: "80-100 บาท",
             category: "side",
             emoji: "🥘",
+            popular: true
+        },
+        {
+            name: "ข้าวเปล่า",
+            desc: "ข้าวสวยร้อนๆ",
+            price: "10-20 บาท",
+            category: "side",
+            emoji: "🍚",
             popular: false
         },
 

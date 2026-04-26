@@ -264,16 +264,7 @@ a {
 
 /* === Menu Section === */
 .menu-section {
-    background: var(--brown);
-    padding: 60px 0;
-}
-
-.menu-section .section-title {
-    color: var(--white);
-}
-
-.menu-section .section-subtitle {
-    color: var(--gold-light);
+    background: var(--white);
 }
 
 .menu-layout {
@@ -293,9 +284,9 @@ a {
 
 .filter-btn {
     padding: 14px 20px;
-    border: none;
-    background: var(--white);
-    color: var(--brown);
+    border: 2px solid var(--gold);
+    background: transparent;
+    color: var(--gold-dark);
     border-radius: var(--radius);
     font-family: 'Kanit', sans-serif;
     font-size: 1rem;
@@ -313,7 +304,7 @@ a {
 .filter-btn.active {
     background: var(--gold);
     color: var(--white);
-    box-shadow: 0 2px 8px rgba(212,168,67,0.4);
+    border-color: var(--gold);
 }
 
 .menu-main {
@@ -327,7 +318,7 @@ a {
 }
 
 .menu-card {
-    background: var(--white);
+    background: var(--cream);
     border-radius: var(--radius);
     overflow: hidden;
     transition: var(--transition);
@@ -394,7 +385,7 @@ a {
     text-align: center;
     margin-top: 32px;
     font-size: 0.85rem;
-    color: var(--gold-light);
+    color: var(--gray);
     font-style: italic;
 }
 
