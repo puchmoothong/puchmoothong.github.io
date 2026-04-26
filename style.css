@@ -144,20 +144,23 @@ a {
 /* === Hero === */
 .hero {
     position: relative;
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, var(--brown) 0%, var(--red-dark) 50%, var(--gold-dark) 100%);
     margin-top: 65px;
     overflow: hidden;
+    background: var(--cream);
 }
 
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80"><circle cx="40" cy="40" r="2" fill="rgba(255,255,255,0.05)"/></svg>') repeat;
-    background-size: 40px 40px;
+.hero-cover {
+    width: 100%;
+    text-align: center;
+    background: var(--white);
+}
+
+.hero-cover-img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .hero-content {
@@ -165,27 +168,8 @@ a {
     color: var(--white);
     position: relative;
     z-index: 1;
-    padding: 60px 20px;
-}
-
-.hero-logo {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
-}
-
-.hero-lunchbox {
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--gold);
-    letter-spacing: 2px;
-    margin-bottom: 4px;
-    padding: 6px 20px;
-    border: 1px solid var(--gold);
-    border-radius: 50px;
-    display: inline-block;
+    padding: 24px 20px 32px;
+    background: linear-gradient(135deg, var(--brown) 0%, var(--red-dark) 100%);
 }
 
 .hero-since {
@@ -193,7 +177,7 @@ a {
     font-weight: 500;
     color: var(--gold-light);
     letter-spacing: 4px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .hero-content h2 {
