@@ -146,8 +146,8 @@ var SITE_DATA = {
         // ไก่ หมู 50-60 / หมึก กุ้ง หมูกรอบ 60-70
         {
             name: "ผัดกะเพรา ไก่/หมู",
-            desc: "ผัดกะเพราหอมๆ ไข่ดาว (หมึก กุ้ง หมูกรอบ 60-70)",
-            price: "50-60 บาท",
+            desc: "ผัดกะเพราหอมๆ ไข่ดาว (หมูกรอบ/ทะเล 50-60)",
+            price: "40-50 บาท",
             category: "made-to-order",
             emoji: "🍳",
             popular: true
@@ -170,48 +170,48 @@ var SITE_DATA = {
         },
         {
             name: "ข้าวผัดพริกแกง",
-            desc: "หมู/ไก่ 50-60 (หมูกรอบ กุ้ง หมึก 60-70)",
-            price: "50-60 บาท",
+            desc: "หมู/ไก่/หมูกรอบ 40-50 (ทะเล 50-60)",
+            price: "40-50 บาท",
             category: "made-to-order",
             emoji: "🍳",
             popular: false
         },
         {
             name: "ข้าวผัดพริกเผา",
-            desc: "หมู/ไก่ 50-60 (หมูกรอบ กุ้ง หมึก 60-70)",
-            price: "50-60 บาท",
+            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
+            price: "40-50 บาท",
             category: "made-to-order",
             emoji: "🍳",
             popular: false
         },
         {
             name: "ข้าวผัดพริกสด",
-            desc: "หมู/ไก่ 50-60 (หมูกรอบ กุ้ง หมึก 60-70)",
-            price: "50-60 บาท",
+            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
+            price: "40-50 บาท",
             category: "made-to-order",
             emoji: "🍳",
             popular: false
         },
         {
             name: "ข้าวผัดคะน้า",
-            desc: "หมู/ไก่ 50-60 (หมูกรอบ กุ้ง หมึก 60-70)",
-            price: "50-60 บาท",
+            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
+            price: "40-50 บาท",
             category: "made-to-order",
             emoji: "🍳",
             popular: false
         },
         {
             name: "ข้าวผัดผักบุ้ง",
-            desc: "หมู/ไก่ 50-60 (หมูกรอบ กุ้ง หมึก 60-70)",
-            price: "50-60 บาท",
+            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
+            price: "40-50 บาท",
             category: "made-to-order",
             emoji: "🍳",
             popular: false
         },
         {
             name: "ข้าวผัดผักรวม",
-            desc: "หมู/ไก่ 50-60 (หมูกรอบ กุ้ง หมึก 60-70)",
-            price: "50-60 บาท",
+            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
+            price: "40-50 บาท",
             category: "made-to-order",
             emoji: "🍳",
             popular: false
@@ -290,7 +290,7 @@ var SITE_DATA = {
         },
         {
             name: "มาม่าผัดกะเพรา",
-            desc: "มาม่าผัดกะเพราหอมๆ",
+            desc: "มาม่าผัดกะเพราหอมๆ หมู/ไก่ 40-50 (ทะเล 50-60)",
             price: "40-50 บาท",
             category: "made-to-order",
             emoji: "🍜",
