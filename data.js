@@ -48,8 +48,11 @@ var SITE_DATA = {
     // category: "noodle" = ก๋วยเตี๋ยว, "rice" = ข้าวราดแกง,
     //           "made-to-order" = ตามสั่ง, "side" = กับข้าว, "drink" = เครื่องดื่ม
     // popular: true = ติดป้าย "ยอดนิยม", false = ไม่ติด
+    // category: "noodle" = เมนูเส้น, "quick" = อาหารจานด่วน,
+    //           "order-noodle" = ตามสั่งกลุ่มเส้น, "order-rice" = ตามสั่งกลุ่มข้าว,
+    //           "side" = กับข้าว, "drink" = เครื่องดื่ม
     menu: [
-        // ────── ก๋วยเตี๋ยว ──────
+        // ────── เมนูเส้น ──────
         {
             name: "ก๋วยเตี๋ยวหมูทอง",
             desc: "เมนูเด็ดประจำร้าน เลือกเนื้อสัตว์ได้ตามใจ หมู ไก่ หมึก กุ้ง หมูกรอบ ลูกชิ้น น้ำซุปข้น-ใส",
@@ -66,7 +69,6 @@ var SITE_DATA = {
             emoji: "🥟",
             popular: false
         },
-        
         {
             name: "ก๋วยเตี๋ยวลูกชิ้นหมู-เครื่องใน",
             desc: "ลูกชิ้นหมูหมักนุ่ม ลูกชิ้นเด้ง เครื่องในหมูสดอร่อย",
@@ -84,135 +86,20 @@ var SITE_DATA = {
             popular: false
         },
 
-        // ────── ข้าวราดแกง ──────
+        // ────── อาหารตามสั่ง กลุ่มเส้น ──────
         {
-            name: "ข้าวหมูแดง",
-            desc: "หมูแดงหวานกลมกล่อม ราดน้ำเกรวี่",
-            price: "40-50 บาท",
-            category: "rice",
-            emoji: "🍚",
-            popular: true
-        },
-        {
-            name: "ข้าวหมูกรอบ",
-            desc: "หมูกรอบทอดจนกรอบเหลือง ราดน้ำเกรวี่",
-            price: "40-50 บาท",
-            category: "rice",
-            emoji: "🍚",
-            popular: true
-        },
-        {
-            name: "ข้าวหมูแดง + หมูกรอบ",
-            desc: "รวมมิตร หมูแดง + หมูกรอบ จัดเต็ม",
+            name: "สุกี้น้ำ / แห้ง",
+            desc: "สุกี้ผัดหรือน้ำ หมู/ไก่ (ทะเล 50-60)",
             price: "50-60 บาท",
-            category: "rice",
-            emoji: "🍚",
-            popular: false
-        },
-        {
-            name: "ข้าวมันไก่ต้ม",
-            desc: "ข้าวมันหอม ไก่ต้มนุ่ม น้ำจิ้มสูตรเด็ด (เลือกเป็นข้าวสวยได้)",
-            price: "40-50 บาท",
-            category: "rice",
-            emoji: "🍗",
-            popular: false
-        },
-        {
-            name: "ข้าวมันไก่ทอด",
-            desc: "ไก่ทอดกรอบเสิร์ฟกับข้าวมันหอม (เลือกเป็นข้าวสวยได้)",
-            price: "40-50 บาท",
-            category: "rice",
-            emoji: "🍗",
-            popular: false
-        },
-        {
-            name: "ข้าวมันไก่ต้ม + ไก่ทอด",
-            desc: "รวมมิตรไก่ต้ม+ไก่ทอด จัดเต็ม (เลือกเป็นข้าวสวยได้)",
-            price: "50-60 บาท",
-            category: "rice",
-            emoji: "🍗",
-            popular: false
-        },
-        {
-            name: "ข้าว 4 เผ่า",
-            desc: "หมูแดง หมูกรอบ ไก่ทอด ไก่ต้ม รวมครบ!",
-            price: "70-80 บาท",
-            category: "rice",
-            emoji: "🍚",
-            popular: true
-        },
-
-        // ────── อาหารตามสั่ง ──────
-        // ไก่ หมู 50-60 / หมึก กุ้ง หมูกรอบ 60-70
-        {
-            name: "ผัดกะเพรา ไก่/หมู",
-            desc: "ผัดกะเพราหอมๆ ไข่ดาว (หมูกรอบ/ทะเล 50-60)",
-            price: "40-50 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: true
-        },
-        {
-            name: "ข้าวผัด",
-            desc: "ข้าวผัดไก่/หมู (หมึก กุ้ง หมูกรอบ 60-70)",
-            price: "50-60 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
+            category: "order-noodle",
+            emoji: "🍲",
             popular: false
         },
         {
             name: "ผัดซีอิ๊ว",
             desc: "เส้นใหญ่ผัดซีอิ๊ว ไก่/หมู (หมึก กุ้ง หมูกรอบ 60-70)",
             price: "50-60 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: false
-        },
-        {
-            name: "ข้าวผัดพริกแกง",
-            desc: "หมู/ไก่/หมูกรอบ 40-50 (ทะเล 50-60)",
-            price: "40-50 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: false
-        },
-        {
-            name: "ข้าวผัดพริกเผา",
-            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
-            price: "40-50 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: false
-        },
-        {
-            name: "ข้าวผัดพริกสด",
-            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
-            price: "40-50 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: false
-        },
-        {
-            name: "ข้าวผัดคะน้า",
-            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
-            price: "40-50 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: false
-        },
-        {
-            name: "ข้าวผัดผักบุ้ง",
-            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
-            price: "40-50 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: false
-        },
-        {
-            name: "ข้าวผัดผักรวม",
-            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
-            price: "40-50 บาท",
-            category: "made-to-order",
+            category: "order-noodle",
             emoji: "🍳",
             popular: false
         },
@@ -220,7 +107,7 @@ var SITE_DATA = {
             name: "มักกะโรนี",
             desc: "หมู/ไก่ (หมูกรอบ กุ้ง หมึก 60-70)",
             price: "50-60 บาท",
-            category: "made-to-order",
+            category: "order-noodle",
             emoji: "🍝",
             popular: false
         },
@@ -228,71 +115,15 @@ var SITE_DATA = {
             name: "สปาเกตตี",
             desc: "หมู/ไก่ (หมูกรอบ กุ้ง หมึก 60-70)",
             price: "50-60 บาท",
-            category: "made-to-order",
+            category: "order-noodle",
             emoji: "🍝",
-            popular: false
-        },
-        {
-            name: "ข้าวผัดอเมริกัน",
-            desc: "ข้าวผัดซอสมะเขือเทศ ไข่ดาว ไส้กรอก",
-            price: "50-60 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: false
-        },
-        {
-            name: "หมูกรอบคั่วพริกเกลือ",
-            desc: "หมูกรอบทอดคั่วกับพริกเกลือหอมๆ",
-            price: "50-60 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: false
-        },
-        {
-            name: "ข้าวผัดแฮม / แหนม",
-            desc: "ข้าวผัดแฮมหรือแหนม",
-            price: "50-60 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: false
-        },
-        {
-            name: "ข้าวผัดต้มยำ",
-            desc: "ข้าวผัดรสต้มยำ แซ่บ",
-            price: "50-60 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: false
-        },
-        {
-            name: "หมึกผัดไข่เค็ม",
-            desc: "หมึกผัดไข่เค็มเข้มข้น",
-            price: "50-60 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: false
-        },
-        {
-            name: "ผัดผงกะหรี่",
-            desc: "หมู/ไก่ (หมูกรอบ กุ้ง หมึก 60-70)",
-            price: "50-60 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
-            popular: false
-        },
-        {
-            name: "กะเพราไข่เยี่ยวม้า",
-            desc: "ผัดกะเพราไข่เยี่ยวม้า รสจัด",
-            price: "50-60 บาท",
-            category: "made-to-order",
-            emoji: "🍳",
             popular: false
         },
         {
             name: "มาม่าผัดกะเพรา",
             desc: "มาม่าผัดกะเพราหอมๆ หมู/ไก่ 40-50 (ทะเล 50-60)",
             price: "40-50 บาท",
-            category: "made-to-order",
+            category: "order-noodle",
             emoji: "🍜",
             popular: false
         },
@@ -300,8 +131,188 @@ var SITE_DATA = {
             name: "ผัดหมี่ฮ่องกง",
             desc: "เส้นหมี่ฮ่องกงผัดกรอบ",
             price: "50-60 บาท",
-            category: "made-to-order",
+            category: "order-noodle",
             emoji: "🍜",
+            popular: false
+        },
+
+        // ────── อาหารจานด่วน ──────
+        {
+            name: "ข้าวหมูแดง",
+            desc: "หมูแดงหวานกลมกล่อม ราดน้ำเกรวี่",
+            price: "40-50 บาท",
+            category: "quick",
+            emoji: "🍚",
+            popular: true
+        },
+        {
+            name: "ข้าวหมูกรอบ",
+            desc: "หมูกรอบทอดจนกรอบเหลือง ราดน้ำเกรวี่",
+            price: "40-50 บาท",
+            category: "quick",
+            emoji: "🍚",
+            popular: true
+        },
+        {
+            name: "ข้าวหมูแดง + หมูกรอบ",
+            desc: "รวมมิตร หมูแดง + หมูกรอบ จัดเต็ม",
+            price: "50-60 บาท",
+            category: "quick",
+            emoji: "🍚",
+            popular: false
+        },
+        {
+            name: "ข้าวมันไก่ต้ม",
+            desc: "ข้าวมันหอม ไก่ต้มนุ่ม น้ำจิ้มสูตรเด็ด (เลือกเป็นข้าวสวยได้)",
+            price: "40-50 บาท",
+            category: "quick",
+            emoji: "🍗",
+            popular: false
+        },
+        {
+            name: "ข้าวมันไก่ทอด",
+            desc: "ไก่ทอดกรอบเสิร์ฟกับข้าวมันหอม (เลือกเป็นข้าวสวยได้)",
+            price: "40-50 บาท",
+            category: "quick",
+            emoji: "🍗",
+            popular: false
+        },
+        {
+            name: "ข้าวมันไก่ต้ม + ไก่ทอด",
+            desc: "รวมมิตรไก่ต้ม+ไก่ทอด จัดเต็ม (เลือกเป็นข้าวสวยได้)",
+            price: "50-60 บาท",
+            category: "quick",
+            emoji: "🍗",
+            popular: false
+        },
+        {
+            name: "ข้าว 4 เผ่า",
+            desc: "หมูแดง หมูกรอบ ไก่ทอด ไก่ต้ม รวมครบ!",
+            price: "70-80 บาท",
+            category: "quick",
+            emoji: "🍚",
+            popular: true
+        },
+
+        // ────── อาหารตามสั่ง กลุ่มข้าว ──────
+        {
+            name: "ข้าวผัดกะเพรา ไก่/หมู",
+            desc: "ผัดกะเพราหอมๆ ไข่ดาว (หมูกรอบ/ทะเล 50-60)",
+            price: "40-50 บาท",
+            category: "order-rice",
+            emoji: "🍳",
+            popular: true
+        },
+        {
+            name: "ข้าวผัด",
+            desc: "ข้าวผัดไก่/หมู (หมึก กุ้ง หมูกรอบ 60-70)",
+            price: "50-60 บาท",
+            category: "order-rice",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดพริกแกง",
+            desc: "หมู/ไก่/หมูกรอบ 40-50 (ทะเล 50-60)",
+            price: "40-50 บาท",
+            category: "order-rice",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดพริกเผา",
+            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
+            price: "40-50 บาท",
+            category: "order-rice",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดพริกสด",
+            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
+            price: "40-50 บาท",
+            category: "order-rice",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดคะน้า",
+            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
+            price: "40-50 บาท",
+            category: "order-rice",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดผักบุ้ง",
+            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
+            price: "40-50 บาท",
+            category: "order-rice",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดผักรวม",
+            desc: "หมู/ไก่ 40-50 (ทะเล 50-60)",
+            price: "40-50 บาท",
+            category: "order-rice",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดอเมริกัน",
+            desc: "ข้าวผัดซอสมะเขือเทศ ไข่ดาว ไส้กรอก",
+            price: "50-60 บาท",
+            category: "order-rice",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "หมูกรอบคั่วพริกเกลือ",
+            desc: "หมูกรอบทอดคั่วกับพริกเกลือหอมๆ",
+            price: "50-60 บาท",
+            category: "order-rice",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดแฮม / แหนม",
+            desc: "ข้าวผัดแฮมหรือแหนม",
+            price: "50-60 บาท",
+            category: "order-rice",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดต้มยำ",
+            desc: "ข้าวผัดรสต้มยำ แซ่บ",
+            price: "50-60 บาท",
+            category: "order-rice",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวราดหมึกผัดไข่เค็ม",
+            desc: "หมึกผัดไข่เค็มเข้มข้น",
+            price: "50-60 บาท",
+            category: "order-rice",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวราดผัดผงกะหรี่",
+            desc: "หมู/ไก่ (หมูกรอบ กุ้ง หมึก 60-70)",
+            price: "50-60 บาท",
+            category: "order-rice",
+            emoji: "🍳",
+            popular: false
+        },
+        {
+            name: "ข้าวผัดกะเพราไข่เยี่ยวม้า",
+            desc: "ผัดกะเพราไข่เยี่ยวม้า รสจัด",
+            price: "50-60 บาท",
+            category: "order-rice",
+            emoji: "🍳",
             popular: false
         },
         {

@@ -117,9 +117,10 @@ document.addEventListener('DOMContentLoaded', function() {
             filterBtns.forEach(function(b) { b.classList.remove('active'); });
             this.classList.add('active');
 
+            var filters = filter.split(',');
             var cards = document.querySelectorAll('.menu-card');
             cards.forEach(function(card) {
-                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                if (filter === 'all' || filters.indexOf(card.getAttribute('data-category')) !== -1) {
                     card.style.display = 'flex';
                     card.style.opacity = '0';
                     card.style.transform = 'translateY(10px)';
